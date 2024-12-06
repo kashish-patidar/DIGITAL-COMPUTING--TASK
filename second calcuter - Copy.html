@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calcuter</title>
+    <script>
+        var x,y,result
+
+       function add(){
+       x = document.getElementById("num1").value
+       y = document.getElementById("num2").value
+
+       result = parseInt(x) + parseInt(y)
+       console.log(result)
+       } 
+       
+    </script>
+    <style>
+        .con{
+            width: 300px;
+            border: 1px solid wheat;
+            outline: 1px solid blue;
+            border-radius: 20px;
+            background-color: black;
+            margin: 10px;
+
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .input{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        input{
+            padding: 10px;
+            width: 76%;
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+        .sum{
+            margin-left: 24%;
+        }
+        button{
+            padding: 30px;
+            margin: 5px;
+        }
+        .d{
+            background-color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="flex justify-center item-center h-96">
+    <div class="w-96 shadow-2xl p-10 border"
+    <div class="con">
+        <div class="input">
+            <input type="text" name=""id="">
+         </div>
+         <div class="input">
+            <input type="text" name=""id="">
+
+         </div>
+         <div class="sum">
+            <button>+</button>
+            <button>-</button><br>
+            <button>*</button>
+            <button>/</button>
+
+         </div>
+    </div>
+    <div class="con d">
+        <div class="result">
+            <h1>result</h1>
+            <input type="text" name="" id="">
+
+        </div>
+
+    </div>
+</body>
+</html>
