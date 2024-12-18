@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Year Greeting Card</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: #bddaff;
+}
+.greeting-container {
+  height: 450px;
+  width: 600px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}
+.celebration-shapes {
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(45deg, #b507a7, #fa80f0);
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+}
+.celebration-shapes:before {
+  content: "";
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  top: 197px;
+  background: linear-gradient(45deg, #0756b5, #80affa);
+  border-radius: 50%;
+  right: 347px;
+}
+.greeting-card {
+  position: absolute;
+  height: 300px;
+  width: 550px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 8px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+}
+.greeting-card img {
+  position: absolute;
+  width: 300px;
+  filter: drop-shadow(0 0 20px rgba(26, 0, 68, 0.34));
+  bottom: 0;
+  left: 120px;
+  transition: 0.5s;
+}
+.text-content {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+  width: 250px;
+  right: -250px;
+  transition: 0.5s;
+}
+.greeting-card h2 {
+  color: #1f0b50;
+  text-transform: uppercase;
+}
+.greeting-card p {
+  font-weight: 300;
+  text-align: justify;
+  color: #261844;
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+}
+.greeting-card:hover img {
+  width: 250px;
+  left: 15px;
+  bottom: 20px;
+}
+.greeting-card:hover .text-content {
+  right: 15px;
+}
+  </style>
+    
+  <body>
+    <div class="greeting-container">
+      <div class="celebration-shapes"></div>
+      <div class="greeting-card">
+        <img src="2025-new-year.png" alt="">
+        <div class="text-content">
+          <h2>Cheers to 2025</h2>
+          <p>May your 2025be as amazing as a rainbow-laden unicorn!</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
